@@ -63,15 +63,15 @@ document.location.href= "search.html#" + newURL
 				<a href="#" class="shortcut-facebook" id="live"></a>
                 <a href="#" class="shortcut-facebook"></a>
                 <a href="#" class="shortcut-twitter"></a>
-                <a href="#" class="shortcut-facebook" id="find"></a>
+                <a href="#" class="shortcut-search" id="find"></a>
                 <a href="#" class="shortcut-close"></a>
             </div>
 <script>
 var jqxhr = $.get( "http://nbnpostaliyahguide.com/?page_id=29", function() {
   document.getElementById("live").className = "shortcut-call";
-  document.getElementById("find").className = "shortcut-search";
 }).fail(function() {
-	document.getElementById("live").className = "shortcut-call-offline";});
+document.getElementById("live").className = "shortcut-call-offline";
+	document.getElementById("find").className = "shortcut-facebook";});
 </script>  
 <iframe src="http://nbnpostaliyahguide.com/?page_id=29" frameborder="0" marginheight="0" marginwidth="0" style="visibility:hidden; display:none; margin: 0px; padding: 0px; height: 0; border: none; display: block; width: 0px; "></iframe> 
             <div class="sidebar-search">
