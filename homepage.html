@@ -4,15 +4,8 @@
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, user-scalable=no">
 
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="homepage_files/splash-icon.png">
-<link rel="apple-touch-startup-image" href="http://paultrifa.com/envato/themeforest/slasher/images/splash/splash-screen.png" media="screen and (max-device-width: 320px)">  
-<link rel="apple-touch-startup-image" href="http://paultrifa.com/envato/themeforest/slasher/images/splash/splash-screen@2x.png" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)"> 
-<link rel="apple-touch-startup-image" sizes="640x1096" href="http://paultrifa.com/envato/themeforest/slasher/images/splash/splash-screen@3x.png">
-<link rel="apple-touch-startup-image" sizes="1024x748" href="http://paultrifa.com/envato/themeforest/slasher/images/splash/splash-screen-ipad-landscape" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : landscape)">
-<link rel="apple-touch-startup-image" sizes="768x1004" href="http://paultrifa.com/envato/themeforest/slasher/images/splash/splash-screen-ipad-portrait.png" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait)">
-<link rel="apple-touch-startup-image" sizes="1536x2008" href="http://paultrifa.com/envato/themeforest/slasher/images/splash/splash-screen-ipad-portrait-retina.png" media="(device-width: 768px)	and (orientation: portrait)	and (-webkit-device-pixel-ratio: 2)">
-<link rel="apple-touch-startup-image" sizes="1496x2048" href="http://paultrifa.com/envato/themeforest/slasher/images/splash/splash-screen-ipad-landscape-retina.png" media="(device-width: 768px)	and (orientation: landscape)	and (-webkit-device-pixel-ratio: 2)">
 
 <title>Epsilon Mobile Framework - Version 2.0</title>
 
@@ -34,27 +27,35 @@
 <script type="text/javascript" src="homepage_files/framework.js"></script>
 <script type="text/javascript" src="homepage_files/framework_002.js"></script>
 
+<script type='text/javascript'>//<![CDATA[ 
 
+$(document).ready(function() {
+      $('#fade').delay(500).fadeIn(1000);
+
+      $('.menu-item').click(function(event) {
+          event.preventDefault();
+          newLocation = this.href;
+          $('#fade').fadeOut(1000, function () {
+              window.location = newLocation;
+          });
+      });
+});
+
+</script>
 </head>
 <body>
 
-<div style="display: none;" id="preloader">
-	<div style="display: none;" id="status">
-    	<p class="center-text">
-			Loading the content...
-            <em>Loading depends on your connection speed!</em>
-        </p>
-    </div>
-</div>
 
-<div class="homepage-wrapper">
-    
+
+<div id="fade" class="homepage-wrapper" style="display: none">
+<br /><center><img src="homepage_files/title.png"></center>
     <div class="homepage-navigation">
+	
     	<a class="bengurion" href="1.html">Ben Gurion</a>
         <a class="health" href="2.html">Health</a>
         <a class="money" href="3.html">Bank Account</a>
                 
-        <a href="4.html" class="customs">Misrad Haklita</a>
+        <a class="customs" href="4.html">Misrad Haklita</a>
         <a class="car" href="5.html">Driver's License</a>
         <a class="diploma" href="6.html">Diploma</a>
 
@@ -62,7 +63,7 @@
         <a class="book" href="8.html">School</a>
         <a class="heb" href="9.html">Ulpan</a>
                 
-        <a href="10.html" class="bituach">Bituach Leumi</a>
+        <a class="bituach" href="10.html">Bituach Leumi</a>
         <a class="home" href="11.html">Arnona</a>
         <a class="earth" href="12.html">Teudat Maavar</a>        
         <div class="clear"></div>
@@ -81,7 +82,7 @@
     
 </div>
 
-<div class="homepage-background">
+<div id="fade" class="homepage-background">
 	<div class="bg-pattern"></div>
     <div class="bg-overlay"></div>
 	<img class="bgwidth" id="bg" src="homepage_files/bg.png" alt="img">

@@ -78,7 +78,7 @@ body{
 	width:100px;
 	margin-left:3px;
 	margin-right:3px;
-	margin-bottom:30px;
+	margin-bottom:5px;
 }
 
 
@@ -229,10 +229,11 @@ and (orientation : landscape ){
 		width:520px;
 		margin-left:auto;
 		margin-right:auto;
+		text-align:center;
 	}
 	
 	.homepage-navigation a{
-		width:80px;	
+		width:85px;	
 		background-size:60px 60px;
 		background-position: 10px 0px;
 	}

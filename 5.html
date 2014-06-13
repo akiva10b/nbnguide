@@ -34,6 +34,14 @@
 <script type="text/javascript" src="scripts/framework.js"></script>
 <script type="text/javascript" src="scripts/framework.launcher.js"></script>
 
+<script type="text/javascript">
+<!--
+function gotoURL() {
+var newURL = document.url2go.go.value
+document.location.href= "search.html#" + newURL
+}
+//-->
+</script>
 
 </head>
 <body>
@@ -52,16 +60,25 @@
     <div id="sidebar" class="page-sidebar">
         <div class="page-sidebar-scroll">
         	<div class="sidebar-shortcuts">
-            	<a href="#" class="shortcut-call"></a>
+				<a href="#" class="shortcut-facebook" id="live"></a>
                 <a href="#" class="shortcut-facebook"></a>
                 <a href="#" class="shortcut-twitter"></a>
-                <a href="#" class="shortcut-search"></a>
+                <a href="#" class="shortcut-facebook" id="find"></a>
                 <a href="#" class="shortcut-close"></a>
             </div>
-            
+<script>
+var jqxhr = $.get( "http://nbnpostaliyahguide.com/?page_id=24", function() {
+  document.getElementById("live").className = "shortcut-call";
+  document.getElementById("find").className = "shortcut-search";
+}).fail(function() {
+	document.getElementById("live").className = "shortcut-call-offline";});
+</script>  
+<iframe src="http://nbnpostaliyahguide.com/?page_id=24" frameborder="0" marginheight="0" marginwidth="0" style="visibility:hidden; display:none; margin: 0px; padding: 0px; height: 0; border: none; display: block; width: 0px; "></iframe> 
             <div class="sidebar-search">
             	<div class="search-box">
-                	<input type="text" class="search-field" name="search" onfocus="if(this.value == 'Looking for something?') { this.value = ''; }" value="Looking for something?">
+				<form action="javaScript:gotoURL()" method="get" name="url2go">
+                	<input type="text" class="search-field" name="go" onfocus="if(this.value == 'Looking for something?') { this.value = ''; }" value="Looking for something?">
+				</form>
                 	<a href="#" class="search-close"></a>
                 </div>
             </div>
@@ -136,7 +153,7 @@
         <div style="margin: 0px; padding: 0px; height: 100%; border: none;" class="content"> 
         	<div class="decoration"></div> 
 			
-<iframe id="tree" name="tree" src="http://nbnpostaliyahguide.com/?page_id=24" frameborder="0" marginheight="0" marginwidth="0" width="100%" height="100%" style="margin: 0px; padding: 0px; height: 100%; border: none; display: block; width: 100%; border: none; "></iframe> 
+<iframe id="tree" name="tree" src="offline/5.htm" frameborder="0" marginheight="0" marginwidth="0" width="100%" height="100%" style="margin: 0px; padding: 0px; height: 100%; border: none; display: block; width: 100%; border: none; "></iframe> 
             
 
 		</div>  
