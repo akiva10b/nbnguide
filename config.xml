@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.nbnpostaliyahguide.nbnpag"
+        version   = "1.0.0">
+
+    <name>NBN PAG</name>
+
+    <description>
+        These steps will guide you through your first few weeks after Aliyah. You will find a list of what to expect, which offices to visit, and which documents to bring as you obtain your Israeli documentation and begin your life in Israel.
+    </description>
+		
+    <author href="http://phonegap.com" email="support@phonegap.com">
+        Nefesh B'Nefesh
+    </author>
+
+    <!--
+        If you do not want any permissions to be added to your app, add the
+        following tag to your config.xml; you will still have the INTERNET
+        permission on your app, which PhoneGap requires.
+    -->
+    <preference name="permissions"                value="none"/>
+
+ 
+ 
+    <access origin="*"/>
+    <!--
+        <access origin="http://phonegap.com" />                    - allow any secure requests to http://phonegap.com/
+        <access origin="http://phonegap.com" subdomains="true" />  - same as above, but including subdomains, such as http://build.phonegap.com/
+        <access origin="http://phonegap.com" browserOnly="true" /> - only allows http://phonegap.com to be opened by the child browser.
+    -->
+
+</widget>
