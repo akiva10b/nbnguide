@@ -1,12 +1,111 @@
 <!DOCTYPE html>
-<html>
-<head>
-<script>
-	window.location = "changer/changer.html";
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+
+
+<title>Epsilon Mobile Framework - Version 2.0</title>
+
+<link href="homepage_files/style.css" rel="stylesheet" type="text/css">
+<link href="homepage_files/framework.css" rel="stylesheet" type="text/css">
+<link href="homepage_files/owl.css" rel="stylesheet" type="text/css">
+<link href="homepage_files/owl_002.css" rel="stylesheet" type="text/css">
+<link href="homepage_files/swipebox.css" rel="stylesheet" type="text/css">
+<link href="homepage_files/colorbox.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="homepage_files/jquery.js"></script>
+<script type="text/javascript" src="homepage_files/jqueryui.js"></script>
+<script type="text/javascript" src="homepage_files/owl.js"></script>
+<script type="text/javascript" src="homepage_files/jquery_002.js"></script>
+<script type="text/javascript" src="homepage_files/colorbox.js"></script>
+<script type="text/javascript" src="homepage_files/snap.js"></script>
+<script type="text/javascript" src="homepage_files/contact.js"></script>
+<script type="text/javascript" src="homepage_files/custom.js"></script>
+<script type="text/javascript" src="homepage_files/framework.js"></script>
+<script type="text/javascript" src="homepage_files/framework_002.js"></script>
+
+<script type='text/javascript'>//<![CDATA[ 
+
+$(document).ready(function() {
+      $('#fade').delay(500).fadeIn(1000);
+
+      $('.menu-item').click(function(event) {
+          event.preventDefault();
+          newLocation = this.href;
+          $('#fade').fadeOut(1000, function () {
+              window.location = newLocation;
+          });
+      });
+});
+
 </script>
 </head>
 <body>
 
 
-</body>
-</html>
+
+<div id="fade" class="homepage-wrapper" style="display: none">
+<br /><center><img src="homepage_files/title.png"></center>
+    <div class="homepage-navigation" style="text-align:center">
+	
+    	<a class="chadash" href="chadash/homepage.html">Oleh Chadash</a>
+        <a class="chozer" href="chozer/homepage.html">Katin Chozer</a>
+        <a class="ezrach" href="ezrach/homepage.html">Ezrach Oleh</a>
+                
+        <a class="visa" href="visa/homepage.html">A-1 Visa Temporary Resident</a>
+        <a class="misphacha" href="misphacha/homepage.html">Mishpachat Olim</a>
+        
+        <div class="clear"></div>
+    </div>
+
+    
+    <div class="webapp-wrapper">
+    	<div class="webapp">
+            <img src="homepage_files/splash-icon.png" alt="img">
+            <h3>SLASHER</h3>
+            <p>You’re running iOS. Add this page to your homescreen for an enhanced experience!</p>
+            <em class="corner-deco"></em>
+            <a href="#" class="close-webapp">x</a>
+        </div>
+    </div>
+    
+</div>
+
+<div id="fade" class="homepage-background">
+	<div class="bg-pattern"></div>
+    <div class="bg-overlay"></div>
+	<img class="bgwidth" id="bg" src="homepage_files/bg.png" alt="img">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="display: none;" id="cboxOverlay"></div><div style="display: none;" class="" id="colorbox"><div id="cboxWrapper"><div><div style="float: left;" id="cboxTopLeft"></div><div style="float: left;" id="cboxTopCenter"></div><div style="float: left;" id="cboxTopRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxMiddleLeft"></div><div style="float: left;" id="cboxContent"><div style="float: left;" id="cboxTitle"></div><div style="float: left;" id="cboxCurrent"></div><div style="float: left;" id="cboxNext"></div><div style="float: left;" id="cboxPrevious"></div><div style="float: left;" id="cboxSlideshow"></div><div style="float: left;" id="cboxClose"></div></div><div style="float: left;" id="cboxMiddleRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxBottomLeft"></div><div style="float: left;" id="cboxBottomCenter"></div><div style="float: left;" id="cboxBottomRight"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div></body></html>
