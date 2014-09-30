@@ -87,12 +87,14 @@ body{
 .book{	background-image:url(book.png);}
 .box{	background-image:url(box.png);}
 .car{	background-image:url(car.png);}
-.customs{	background-image:url(customs.png);}
+.customs{	background-image:url(klita.png);}
 .diploma{	background-image:url(diploma.png);}
 .earth{	background-image:url(earth.png);}
 .health{	background-image:url(health.png);}
 .heb{	background-image:url(heb.png);}
 .money{	background-image:url(money.png);}
+.pnim{	background-image:url(pnim.png);}
+.authority{	background-image:url(customs.png);}
 
 .chadash{	background-image:url(new.png);}
 .chozer{	background-image:url(young.png);}
