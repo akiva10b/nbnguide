@@ -94,6 +94,12 @@ body{
 .heb{	background-image:url(heb.png);}
 .money{	background-image:url(money.png);}
 
+.chadash{	background-image:url(new.png);}
+.chozer{	background-image:url(young.png);}
+.ezrach{	background-image:url(return.png);}
+.visa{	background-image:url(temp.png);}
+.misphacha{	background-image:url(family.png);}
+
 
 .footer{
 	width:150px;
@@ -223,12 +229,12 @@ and (orientation : landscape ){
 	}
 		
 	.homepage-navigation{
-		margin-top:40px;
-		margin-bottom:20px;
-		width:520px;
-		margin-left:auto;
-		margin-right:auto;
-		text-align:center;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	width: 520px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 	}
 	
 	.homepage-navigation a{
