@@ -35,6 +35,19 @@
 <script type="text/javascript" src="../scripts/framework.js"></script>
 <script type="text/javascript" src="../scripts/framework.launcher.js"></script>
 
+<script type='text/javascript' src='../scripts/jquery-1.9.1.js'></script>
+<script type='text/javascript'>//<![CDATA[ 
+$(function(){
+var querystring = Math.random();
+
+$('a').each(function()
+{
+ var href = $(this).attr('href');
+ href += (href.match(/\?/) ? '&' : '?') + querystring;
+ $(this).attr('href', href);
+});
+});//]]>  
+</script>
 <script type="text/javascript">
 <!--
 function gotoURL() {
@@ -69,13 +82,13 @@ document.location.href= "search.html#" + newURL
                 <a href="#" class="shortcut-close"></a>
             </div>
 <script>
-var jqxhr = $.get( "http://nbnpostaliyahguide.com/?page_id=916", function() {
+var jqxhr = $.get( "http://www.nbn.org.il/app/1/", function() {
   document.getElementById("live").className = "shortcut-call";
 }).fail(function() {
 document.getElementById("live").className = "shortcut-call-offline";
 	document.getElementById("find").className = "shortcut-facebook";});
 </script>  
-<iframe src="http://nbnpostaliyahguide.com/?page_id=916" frameborder="0" marginheight="0" marginwidth="0" style="visibility:hidden; display:none; margin: 0px; padding: 0px; height: 0; border: none; display: block; width: 0px; "></iframe>          
+<iframe src="http://www.nbn.org.il/app/1/" frameborder="0" marginheight="0" marginwidth="0" style="visibility:hidden; display:none; margin: 0px; padding: 0px; height: 0; border: none; display: block; width: 0px; "></iframe>          
             <div class="sidebar-search">
             	<div class="search-box">
 				<form action="javaScript:gotoURL()" method="get" name="url2go">

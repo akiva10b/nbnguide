@@ -34,7 +34,19 @@
 <script type="text/javascript" src="../scripts/framework.js"></script>
 <script type="text/javascript" src="../scripts/framework.launcher.js"></script>
 
+<script type='text/javascript' src='../scripts/jquery-1.9.1.js'></script>
+<script type='text/javascript'>//<![CDATA[ 
+$(function(){
+var querystring = Math.random();
 
+$('a').each(function()
+{
+ var href = $(this).attr('href');
+ href += (href.match(/\?/) ? '&' : '?') + querystring;
+ $(this).attr('href', href);
+});
+});//]]>  
+</script>
 <script type="text/javascript">
 <!--
 function gotoURL() {
